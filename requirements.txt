@@ -1,0 +1,6 @@
+# GameQ dependencies
+qiskit>=2.2
+numpy>=2.0
+matplotlib>=3.8
+PyYAML>=6.0
+pylatexenc>=2.10

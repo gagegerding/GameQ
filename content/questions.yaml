@@ -1,0 +1,147 @@
+# GameQ Question Bank
+# Put this file at: C:\Users\gageg\GameQ\content\questions.yaml
+# Then run:  python compiler\build_content.py
+# It will generate questions.json and circuit SVGs under assets/circuits/.
+
+# ------------------------------
+# Single-qubit Gate Effect (predict outcome)
+# ------------------------------
+- id: SQGE_001
+  template: SQ_GATE_EFFECT
+  params: { gate: H, initial_state: ket0 }
+  visuals: { circuit: "assets/circuits/SQGE_001.svg" }
+  difficulty: 1
+  explain: "H maps |0⟩ → |+⟩."
+
+- id: SQGE_002
+  template: SQ_GATE_EFFECT
+  params: { gate: H, initial_state: ket1 }
+  visuals: { circuit: "assets/circuits/SQGE_002.svg" }
+  difficulty: 1
+  explain: "H maps |1⟩ → |−⟩."
+
+- id: SQGE_003
+  template: SQ_GATE_EFFECT
+  params: { gate: X, initial_state: ket0 }
+  visuals: { circuit: "assets/circuits/SQGE_003.svg" }
+  difficulty: 1
+
+- id: SQGE_004
+  template: SQ_GATE_EFFECT
+  params: { gate: X, initial_state: ket1 }
+  visuals: { circuit: "assets/circuits/SQGE_004.svg" }
+  difficulty: 1
+
+- id: SQGE_005
+  template: SQ_GATE_EFFECT
+  params: { gate: Z, initial_state: plus }
+  visuals: { circuit: "assets/circuits/SQGE_005.svg" }
+  difficulty: 1
+
+- id: SQGE_006
+  template: SQ_GATE_EFFECT
+  params: { gate: S, initial_state: plus }
+  visuals: { circuit: "assets/circuits/SQGE_006.svg" }
+  difficulty: 2
+  explain: "S adds +π/2 phase to |1⟩: |+⟩ → |+i⟩."
+
+- id: SQGE_007
+  template: SQ_GATE_EFFECT
+  params: { gate: Sd, initial_state: plus }
+  visuals: { circuit: "assets/circuits/SQGE_007.svg" }
+  difficulty: 2
+  explain: "S† adds −π/2 phase to |1⟩: |+⟩ → |−i⟩."
+
+- id: SQGE_008
+  template: SQ_GATE_EFFECT
+  params: { gate: T, initial_state: plus }
+  visuals: { circuit: "assets/circuits/SQGE_008.svg" }
+  difficulty: 2
+
+- id: SQGE_009
+  template: SQ_GATE_EFFECT
+  params: { gate: Ry(pi/2), initial_state: ket0 }
+  visuals: { circuit: "assets/circuits/SQGE_009.svg" }
+  difficulty: 2
+  explain: "Ry(π/2) takes |0⟩ to |+⟩."
+
+- id: SQGE_010
+  template: SQ_GATE_EFFECT
+  params: { gate: Rx(pi), initial_state: plus }
+  visuals: { circuit: "assets/circuits/SQGE_010.svg" }
+  difficulty: 2
+
+# ------------------------------
+# Single-qubit Target Build (enter gate sequence)
+# ------------------------------
+- id: SQBT_001
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |+⟩ with as few gates as possible."
+  params:
+    target_state: plus
+    exemplar: [H]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_001.svg" }
+  difficulty: 1
+
+- id: SQBT_002
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |−⟩."
+  params:
+    target_state: minus
+    exemplar: [X, H]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_002.svg" }
+  difficulty: 1
+
+- id: SQBT_003
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |+i⟩."
+  params:
+    target_state: plus_i
+    exemplar: [H, S]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_003.svg" }
+  difficulty: 2
+
+- id: SQBT_004
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |−i⟩."
+  params:
+    target_state: minus_i
+    exemplar: [H, Sd]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_004.svg" }
+  difficulty: 2
+
+- id: SQBT_005
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, reach the Bloch point θ=π/3, φ=0 (i.e., Ry(π/3)|0⟩)."
+  params:
+    target_state: "ry(pi/3)"
+    exemplar: [Ry(pi/3)]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_005.svg" }
+  difficulty: 2
+
+- id: SQBT_006
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |1⟩."
+  params:
+    target_state: ket1
+    exemplar: [X]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_006.svg" }
+  difficulty: 1
+
+- id: SQBT_007
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build a state with θ=π/2, φ=π/2 (Bloch +y axis)."
+  params:
+    target_state: plus_i
+    exemplar: [H, S]
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_007.svg" }
+  difficulty: 2
+
+- id: SQBT_008
+  template: SQ_BUILD_TARGET
+  prompt: "From |0⟩, build |−⟩ using a single rotation gate."
+  params:
+    target_state: minus
+    exemplar: [Ry(pi), X]  # exemplar can have alternatives; first is minimal rotation form
+  visuals: { exemplar_circuit: "assets/circuits/SQBT_008.svg" }
+  difficulty: 2

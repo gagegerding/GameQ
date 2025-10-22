@@ -1,0 +1,651 @@
+[
+  {
+    "id": "SQGE_001",
+    "type": "gate_effect",
+    "prompt": "Apply H to |\u03c8\u27e9 = ket0.",
+    "state_start": [
+      "(1+0j)",
+      "0j"
+    ],
+    "bloch_start": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      1.0000000000000002,
+      -8.659560562354934e-17,
+      2.220446049250313e-16
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_001.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_002",
+    "type": "gate_effect",
+    "prompt": "Apply H to |\u03c8\u27e9 = ket1.",
+    "state_start": [
+      "0j",
+      "(1+0j)"
+    ],
+    "bloch_start": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      -1.0000000000000002,
+      8.659560562354934e-17,
+      -2.220446049250313e-16
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_002.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_003",
+    "type": "gate_effect",
+    "prompt": "Apply X to |\u03c8\u27e9 = ket0.",
+    "state_start": [
+      "(1+0j)",
+      "0j"
+    ],
+    "bloch_start": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "steps": [
+      {
+        "gate": "X",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      0.0,
+      -1.2246467991473532e-16,
+      -1.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_003.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_004",
+    "type": "gate_effect",
+    "prompt": "Apply X to |\u03c8\u27e9 = ket1.",
+    "state_start": [
+      "0j",
+      "(1+0j)"
+    ],
+    "bloch_start": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "steps": [
+      {
+        "gate": "X",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      0.0,
+      1.2246467991473532e-16,
+      1.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_004.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_005",
+    "type": "gate_effect",
+    "prompt": "Apply Z to |\u03c8\u27e9 = plus.",
+    "state_start": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_start": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "steps": [
+      {
+        "gate": "Z",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      -1.0000000000000002,
+      1.2246467991473535e-16,
+      0.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_005.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_006",
+    "type": "gate_effect",
+    "prompt": "Apply S to |\u03c8\u27e9 = plus.",
+    "state_start": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_start": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "steps": [
+      {
+        "gate": "S",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "bloch_end": [
+      6.123233995736767e-17,
+      1.0000000000000002,
+      0.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_006.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_007",
+    "type": "gate_effect",
+    "prompt": "Apply Sd to |\u03c8\u27e9 = plus.",
+    "state_start": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_start": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "steps": [
+      {
+        "gate": "Sd",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": -1.5707963267948966
+      }
+    ],
+    "bloch_end": [
+      6.123233995736767e-17,
+      -1.0000000000000002,
+      0.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_007.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_008",
+    "type": "gate_effect",
+    "prompt": "Apply T to |\u03c8\u27e9 = plus.",
+    "state_start": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_start": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "steps": [
+      {
+        "gate": "T",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": 0.7853981633974483
+      }
+    ],
+    "bloch_end": [
+      0.7071067811865477,
+      0.7071067811865477,
+      0.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_008.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_009",
+    "type": "gate_effect",
+    "prompt": "Apply Ry(pi/2) to |\u03c8\u27e9 = ket0.",
+    "state_start": [
+      "(1+0j)",
+      "0j"
+    ],
+    "bloch_start": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "steps": [
+      {
+        "gate": "Ry(pi/2)",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "bloch_end": [
+      1.0,
+      0.0,
+      6.123233995736766e-17
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_009.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQGE_010",
+    "type": "gate_effect",
+    "prompt": "Apply Rx(pi) to |\u03c8\u27e9 = plus.",
+    "state_start": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_start": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "steps": [
+      {
+        "gate": "Rx(pi)",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "bloch_end": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "assets": {
+      "circuit": "assets/circuits/SQGE_010.svg"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "SQBT_001",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |+\u27e9 with as few gates as possible.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "(0.7071067811865476+0j)"
+    ],
+    "bloch_target": [
+      1.0000000000000002,
+      0.0,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_001.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_002",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |\u2212\u27e9.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "(-0.7071067811865476+0j)"
+    ],
+    "bloch_target": [
+      -1.0000000000000002,
+      -0.0,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "X",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      },
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_002.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_003",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |+i\u27e9.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "0.7071067811865476j"
+    ],
+    "bloch_target": [
+      0.0,
+      -1.0000000000000002,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      },
+      {
+        "gate": "S",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_003.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_004",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |\u2212i\u27e9.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "-0.7071067811865476j"
+    ],
+    "bloch_target": [
+      0.0,
+      1.0000000000000002,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      },
+      {
+        "gate": "Sd",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": -1.5707963267948966
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_004.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_005",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, reach the Bloch point \u03b8=\u03c0/3, \u03c6=0 (i.e., Ry(\u03c0/3)|0\u27e9).",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.8660254037844387+0j)",
+      "(0.49999999999999994+0j)"
+    ],
+    "bloch_target": [
+      0.8660254037844386,
+      0.0,
+      0.5000000000000002
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "Ry(pi/3)",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "theta": 1.0471975511965976
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_005.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_006",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |1\u27e9.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "0j",
+      "(1+0j)"
+    ],
+    "bloch_target": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "X",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_006.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_007",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build a state with \u03b8=\u03c0/2, \u03c6=\u03c0/2 (Bloch +y axis).",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "0.7071067811865476j"
+    ],
+    "bloch_target": [
+      0.0,
+      -1.0000000000000002,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "H",
+        "axis": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865475
+        ],
+        "theta": 3.141592653589793
+      },
+      {
+        "gate": "S",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "theta": 1.5707963267948966
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_007.svg"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "SQBT_008",
+    "type": "build_target",
+    "prompt": "From |0\u27e9, build |\u2212\u27e9 using a single rotation gate.",
+    "state_start": [
+      "1+0j",
+      "0+0j"
+    ],
+    "target_vector": [
+      "(0.7071067811865476+0j)",
+      "(-0.7071067811865476+0j)"
+    ],
+    "bloch_target": [
+      -1.0000000000000002,
+      -0.0,
+      0.0
+    ],
+    "exemplar_steps": [
+      {
+        "gate": "Ry(pi)",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      },
+      {
+        "gate": "X",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "theta": 3.141592653589793
+      }
+    ],
+    "assets": {
+      "exemplar_circuit": "assets/circuits/SQBT_008.svg"
+    },
+    "difficulty": 2
+  }
+]
